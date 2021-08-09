@@ -1,0 +1,58 @@
+       modified:   application/classes/common_config.php
+        modified:   application/classes/mobile_common_config.php
+        modified:   application/i18n/endef.php
+        modified:   application/views/admin/add_settings_site.php
+        modified:   application/views/admin/header.php
+        modified:   application/views/admin/taxi_dispatch/dashboard_beta.php
+        modified:   application/views/admin/taxi_dispatch/manage_booking.php
+        modified:   application/views/admin/template.php
+        modified:   application/views/admin/transaction_details.php
+        modified:   application/views/themes/default/template_signin.php
+        modified:   application/views/themes/default/website_user/webbooking_new.php
+        modified:   index.php
+        modified:   modules_new/commonfunction/classes/kohana/commonfunction.php
+        modified:   modules_new/modagent/classes/controller/modagent.php
+        modified:   modules_new/modconnection/classes/controller/moddriverapi113.php
+        modified:   modules_new/modconnection/classes/controller/modpassengerapi113.php
+        modified:   modules_new/modconnection/classes/model/moddriverapi113.php
+        modified:   modules_new/modconnection/classes/model/modpassengerapi113.php
+        modified:   modules_new/modcorporate/classes/controller/modcorporate.php
+        modified:   modules_new/moddriversubscription/classes/controller/moddriversubscription.php
+        modified:   modules_new/moddriversubscription/classes/model/moddriversubscription.php
+        modified:   modules_new/mpesamozambique/classes/kohana/Mpesamozambiquepayment.php
+        modified:   modules_new/stripe/classes/kohana/stripepayment.php
+        modified:   modules_new/taximobility/classes/controller/taximobilityadmin.php
+        modified:   modules_new/taximobility/classes/controller/taximobilitycompany.php
+        modified:   modules_new/taximobility/classes/controller/taximobilitymanager.php
+        modified:   modules_new/taximobility/classes/controller/taximobilitymobile104.php
+        modified:   modules_new/taximobility/classes/controller/taximobilitytaxidispatch.php
+        modified:   modules_new/taximobility/classes/model/taximobilityadmin.php
+        modified:   modules_new/taximobility/classes/model/taximobilityauthorize.php
+        modified:   modules_new/taximobility/classes/model/taximobilitycommonmodel.php
+        modified:   modules_new/taximobility/classes/model/taximobilityedit.php
+        modified:   modules_new/taximobility/classes/model/taximobilitytaxidispatch.php
+        modified:   modules_new/taximobility/classes/model/taximobilitytransaction.php
+        modified:   nodefiles/common/database.js
+        modified:   nodefiles/common/database_config.json
+        modified:   nodefiles/common/database_new.js
+        modified:   nodefiles/common/function/driver_location_history_update.js
+        modified:   public/simplaa/currency_info.xml
+        deleted:    public/simplaa/gt_logs/driverapi_logs.txt
+        deleted:    public/simplaa/gt_logs/passapi_logs.txt
+        modified:   public/simplaa/iOS/static_image/driverUnFocus.png
+        modified:   public/simplaa/iOS/static_image/headerLogo_driver.png
+        modified:   public/simplaa/iOS/static_image/signInLogo_driver.png
+        modified:   public/simplaa/site_logo/frontend_logo.png
+        modified:   public/simplaa/siteconfig.xml
+        modified:   public/webbooking/css/style.css
+        modified:   public/webbooking/images/homebanner_img.png
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        application/logs/2020/
+        application/views/admin/otp_verification.php
+        public/simplaa/site_logo/frontend_logo1.png
+        public/simplaa/site_logo/frontend_logo3.png
+        public/srsitelog/
+        public/uploads/site_logo/site_email_logo_bg1.png
+        public/webbooking/images/homebanner_img_bg.png

@@ -1,0 +1,98 @@
+ADVANCED TEXT FORMATING :
+
+	* Their are some other Text formatting elements are present in HTML;
+
+	* These Elements are less known;
+
+	* Here you'll learn about marking up quotations, description lists, computer code and other related text, subscript and superscript, contact information, and more.
+
+
+DESCRIPTION LISTS :
+	
+	* In HTML their are Three Types of Listing is present 
+
+		* Ordered List;
+
+		* Unordered List;
+
+		* Description List;
+
+	* This kind of List is mainly used in "Terms and Definition","Question and Answer";
+
+	* In descrition list uses the <dl></dl> for wrapping the content;
+
+	* for list title using the <dt></dt>;
+
+	* for list description use <dd></dd>;
+
+	* we can use multiple description;
+
+	* for Example refer the advancedTextFormatting.html;
+
+BLOCKQUOTES :
+	
+	* Use the <blockquote></blockquote>
+
+	* Use the <q></q>
+	
+ABBREVATIONS :
+ 		
+ 	* used to add the acronym to the word;
+
+ 	* by using the <abbr></abbr>
+
+ 	* When the Tooltip hover the abbrevation it shows the acronym;
+
+ 	* it takes title as the property to show the full form of abbrevation;
+
+ 	* We can also use the <acronym></acronym> this is same as <abbr>
+
+FOR ADDRESS AND CONTACT DETAILS :
+		
+	* For these kind of sitiuation use
+
+	* use the <address></address> to wrap the content;
+
+	* it can also accepts the complex nested elements; 
+
+	* like ul, ol, p, and more;
+
+SUBSCRIPT AND SUPERSCRIPT :
+	
+	* This is mainly used in maths equations and chemistry formula and more;
+
+	* like adding square values of x; adding th in the date and more;
+
+	* By using <sub>, <sup> we can achive this;
+
+	* <sub> -> means the text added below the text;
+
+	* <sup> -> adds the text top of the text;
+
+	* for example refer the advancedTextFormatting.html; 
+
+REPRESENTING THE COMPUTER CODE :
+	
+	* Their are number of elements are available for making the computer code;
+
+	* Like code, pre, var, kbd, samp;
+
+	* CODE -> for adding the single piece of code;
+
+	* PRE  -> for render the code with proper intendation, by default browser ignores all the white spaces so if we use the <pre> it render the code with proper intent;
+
+	* VAR  -> for specifically making up the variables;
+
+	* KBD  -> for marking up keyboard (and other types of) input entered into the computer.
+
+	* SAMP -> for marking up the output of a computer program;
+
+	* By using the pre and the code gives the better result;
+
+	* careful to use the pre it given the all allows all the spaces as per the code is written;
+
+DATE AND TIME :
+	
+	* HTML also provides the TIME element for marking up times and dates in machine readable format.
+
+	* Example : <time datetime="2016-01-20">20 January 2016</time>;

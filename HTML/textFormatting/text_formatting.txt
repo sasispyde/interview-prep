@@ -1,0 +1,65 @@
+TEXT FORMATTING :
+	
+	* it helps to increase the reading experience of an user;
+
+	* for example NEWS papers, magazines, textbooks and more;
+
+PARAGRAPH :
+	
+	* in html each paragraph is wrapped in <p></p> element;
+
+HEADING :
+	
+	* for heading we use different size of fonts so we use;
+
+	* their are 6 type of heading are used in HTML;
+
+	* <h1></h1> -> Heading
+
+	* <h2></h2> -> Sub-Heading
+
+	* <h3></h3>	-> Sub-Sub-Heading
+
+	* <h4></h4> -> Sub-Sub-Sub-Heading
+
+	* <h5></h5> -> Sub-Sub-Sub-Sub-Heading
+
+	* <h6></h6> -> Sub-Sub-Sub-Sub-Sub-Heading
+
+	* <p></p> 	-> For Paragraphs
+
+LISTS :
+	
+	Unrodered list : 
+
+		* Unordered lists are used to mark up lists of items for which the order of the items doesn't matter — let's take a shopping list as an example.
+
+		* Every unordered list must starts with <ul> and Ends with </ul>
+
+		* Using the <li> to make an list of element each should wraped by the <li>
+
+	Orderd List : 
+
+		* Ordered list mainly used for the order of the item does matters;
+
+		* like Instructions and Telling the Route for a place;
+
+		* Every orderd list is starts with <ol> and ends with </ol>
+
+		* Using the <li> to make an list;
+
+		* Each element should be wrapped with the <li></li>
+
+	Nested List : 
+
+		* The list inside an list is Known as Nested List;
+
+EMPHASIS and IMPORTANCE :
+	
+	* It is helps to improve the Readability and Righ Formatting the Text;
+
+	* their are some emphasis element in HTML like <b>, <em>, and <strong> and etc...
+
+	* Sometimes we need to mark some bold text for a word in that case we gonna use the <strong>
+
+	* <b>, <i>, <u>, <strong>, <em>, these are the text emphasis elements and more over we can use the <span> also for custiom styling;

@@ -1,0 +1,83 @@
+HTML is basically full of text and it was too boring to read and not looks so great;
+
+So thats why we are going to use the some really nice looking formats likes images and the videos and more;
+
+
+HOW WE ARE GOING TO PUT A IMAGE INTO THE WEB PAGE :
+	
+	* In order to put a image into the document by using the <img> tag to we achive that;
+
+	* This is not have closing tag;
+
+	* it takes two useful attributes like "src" and "alt";
+
+	* like <img src="galaxy.png" alt="galary" />
+
+	* if images in sub directory use : 
+
+	* <img src="images/dinosaur.jpg">
+
+	* search engine also usees the image name so use the proper image names like "galaxy.png" dont use "image031.png";
+
+	* always use the images in your own server for better experience;
+
+	* Elements like <img> and <video> are sometimes referred to as replaced elements. This is because the element's content and size are defined by an external resource (like an image or video file), not by the contents of the element itself.
+
+	* The next attribute we'll look at is alt. Its value is supposed to be a textual description of the image, for use in situations where the image cannot be seen/displayed or takes a long time to render because of a slow internet connection. For example, our above code could be modified like so:
+
+	* src -> use the path of an images ;
+
+	* alt -> text information about the page only the image not found;
+
+	* screen readers also used the "alt" text to read out the images text;
+
+	* When we use the images not related to content use the 'alt=""' to avoid screen reader to waste the time;
+
+	* Link. If you put an image inside <a> tags, to turn an image into a link, you still must provide accessible link text. In such cases you may, either, write it inside the same <a> element, or inside the image's alt attribute – whichever works best in your case.
+
+	* Text. You should not put your text into images. If your main heading needs a drop shadow, for example, use CSS for that rather than putting the text into an image. However, If you really can't avoid doing this, you should supply the text inside the alt attribute.
+
+WIDHT AND HEIGHT ATTRIBUTES :
+	
+	* use the width and height to specify the image width and the height of yout images;
+
+TITLE ATTRIBUTE :
+	
+	* use the title attribute to show the info about the image at the hover;
+
+	* this is not recommnded to use 
+
+Annotating images with figures and figure captions : 
+	
+	* There are a number of ways that you could add a caption to go with your image. For example, there would be nothing to stop you from doing this
+
+
+	* 	<div class="figure">
+		  <img src="images/dinosaur.jpg"
+		       alt="The head and torso of a dinosaur skeleton;
+		            it has a large head with long sharp teeth"
+		       width="400"
+		       height="341">
+
+		  <p>A T-Rex on display in the Manchester University Museum.</p>
+		</div>
+
+	* This is ok. It contains the content you need, and is nicely stylable using CSS. But there is a problem here: there is nothing that semantically links the image to its caption, which can cause problems for screen readers. For example, when you have 50 images and captions, which caption goes with which image?
+
+	* A better solution, is to use the HTML5 <figure> and <figcaption> elements. These are created for exactly this purpose: to provide a semantic container for figures, and to clearly link the figure to the caption. Our above example could be rewritten like this:
+
+	* <figure>
+	  <img src="images/dinosaur.jpg"
+	       alt="The head and torso of a dinosaur skeleton;
+	            it has a large head with long sharp teeth"
+	       width="400"
+	       height="341">
+
+	  <figcaption>A T-Rex on display in the Manchester University Museum.</figcaption>
+	</figure>
+
+	* The <figcaption> element tells browsers, and assistive technology that the caption describes the other content of the <figure> element.
+
+CSS BACKGROUND IMAGES : 
+	
+	* The CSS background-image property, and the other background-* properties, are used to control background image placement.

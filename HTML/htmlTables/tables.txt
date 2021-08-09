@@ -1,0 +1,43 @@
+HTML Tables :
+	
+	* A very common task in HTML is structuring tabular data, and it has a number of elements and attributes for just this purpose.
+
+	* This article gets you started with HTML tables, covering the very basics such as rows and cells, headings, making cells span multiple columns and rows, and how to group together all the cells in a column for styling purposes.
+
+	* A table is a structured set of data made up of rows and columns (tabular data). A table allows you to quickly and easily look up values that indicate some kind of connection between different types of data, for example a person and their age, or a day of the week, or the timetable for a local swimming pool.
+
+	* The point of a table is that it is rigid. Information is easily interpreted by making visual associations between row and column headers.
+
+WHEN SHOULD NOT USE THE HTML TABLES :
+	
+	* HTML tables should be used for tabular data
+
+	* this is what they are designed for. Unfortunately, a lot of people used to use HTML tables to lay out web pages
+
+TABLE ELEMENT :
+	
+	* TABLE;
+
+	* TR;
+
+	* TD;
+
+	* TH;
+
+	* TBODY;
+
+	* THEAD;
+
+	* TH;
+
+	* COL;
+
+	* COLGROUP;
+
+	* THEAD -> The <thead> element must wrap the part of the table that is the header — this is usually the first row containing the column headings, but this is not necessarily always the case. If you are using <col>/<colgroup> element, the table header should come just below those.
+
+	* TFOOD -> The <tfoot> element needs to wrap the part of the table that is the footer — this might be a final row with items in the previous rows summed, for example. You can include the table footer right at the bottom of the table as you'd expect, or just below the table header (the browser will still render it at the bottom of the table).
+
+	* TBODY -> The <tbody> element needs to wrap the other parts of the table content that aren't in the table header or footer. It will appear below the table header or sometimes footer, depending on how you decided to structure it.
+	
+	*  

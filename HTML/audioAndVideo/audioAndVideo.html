@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="US-en">
+	<head>
+		<!-- Meta data section -->
+		<meta charset="utf-8">
+		<meta name="author" content="Sasidharan">
+		<meta name="description" content="Embedding the Audio and Video in HTML">
+		<meta name="viewport" content="width = device-width initial-scale = 1">
+
+		<!-- Title of the page -->
+		<title>Audio and Video</title>
+
+		<!-- Link css -->
+		<link rel="stylesheet" type="text/css" href="style.css">
+	</head>	
+	<body>
+		<h1><center>HTML VIDEO and AUDIO Element's</center></h1>
+		<h2><center style="text-decoration: underline;">Video Element</center></h2>
+		<div class="container">
+			<video src="demo.mp4" controls width="33%" height="400px">
+				<p>Browser not supported</p>
+			</video>
+
+			<!-- For multiple video to improve the compactability -->
+			<video controls width="33%" height="400px">
+			  <source src="demo.mp4" type="video/mp4">
+			  <source src="rabbit320.webm" type="video/webm">
+			  <p>Your browser doesn't support HTML5 video. Here is a <a download href="demo.mp4">link to the video</a> instead.</p>
+			</video>
+
+			<!-- Video element with multiple options -->
+			<video controls width="33%" height="400px" loop muted preload="auto" poster="https://images.unsplash.com/photo-1595095650036-adbd2b88bbd9?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1506&q=80">
+			  <source src="demo.mp4" type="video/mp4">
+			  <source src="rabbit320.webm" type="video/webm">
+			  <p>Your browser doesn't support HTML video. Here is a <a href="rabbit320.mp4">link to the video</a> instead.</p>
+			</video>
+		</div>
+
+		<!-- Audio elements -->
+		<h2><center style="text-decoration: underline;">Audio Element</center></h2>
+		<audio controls>
+		  	<source src="viper.mp3" type="audio/mp3">
+		  	<source src="viper.ogg" type="audio/ogg">
+		  	<p>Your browser doesn't support HTML5 audio. Here is a <a href="viper.mp3">link to the audio</a> instead.</p>
+		</audio>
+	</body>
+</html>

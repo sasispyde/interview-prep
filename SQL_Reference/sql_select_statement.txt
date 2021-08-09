@@ -1,0 +1,192 @@
+SELECT Statement : 
+	
+	* it is the most commonly used statement in sql it is used to select and reterive the selected data
+
+	* Syntax : 
+
+		* SELECT expression FROM table_name WHERE condtion;
+
+	* Options in select statemant : 
+
+		* WHERE Clause -> making conditions;
+		* GROUP BY - > it is used to group the rows that shares the common properties;
+		* HAVING
+		* ORDER BY -> this is used to order the data( like assending order or desending order )
+
+SQL SELECT Queries : 
+	
+	* Common syntax : 
+
+		* SELECT colunm_name FROM table_name;
+			ex : SELECT first_namr FROM demo_table; ( single colunm )
+			ex : SELECT first_name,last_name FROM demo_table ( select the multiple colunm )
+			ex : SELECT * FROM demo_table ( to get all colunm );
+
+	* UNIQUE Statement : 
+
+		* It removes the duplicate rows in table
+
+		* SELECT UNIQUE colunm_name FROM table_name;
+			ex : SELECT UNIQUE first_name FROM demo_table;
+
+	* DISTINCT Statement : 
+
+		* it is same as UNIQUE statement
+
+		* SELECT DISTINCT colunm_name FROM table_name;
+			ex : SELECT DISTINCT first_name FROM demo_table;
+
+	* COUNT statement : 
+
+		* it is helpful to find how many rows in the selected condition;
+
+		* NUll Fields are not not counted;
+
+		* SELECT COUNT( expression or colunm name ) FROM table_name WHERE condition;
+			ex : SELECT COUNT( names ) FROM demo_table WHERE name = "sasi"; ( total names )
+			ex : SELECT COUNT( * ) FROM demo_table; ( count all fields )
+			ex : SELECT COUNT( DISTINCE names ) FROM( returns unique values count );
+
+	* TOP Statement : 
+
+		* it is helpful to how many rows to reterived;
+
+		* SELECT TOP number_of_documents_to_fetch colunm_name FROM table_name;
+			ex : SELECT TOP 2 * FROM demo_table;
+
+	* FIRST statement ( only works in MS-ACCESS ) : 
+
+		* it returns the first value in the table; 
+		
+		* SELECT FIRST( colunm_name ) AS alias_name FROM cuutomers;
+
+	* LAST statement ( only works in MS-ACCESS ) : 
+
+		* SELECT LAST ( colunm_name ) FROM table_name;
+
+		* MYSQL : 
+
+			* SELECT colunm_name FROM table_name ORDER BY colunm_name DESC LIMIT 1; ( last value )
+
+	* RANDOM statement : 
+
+		* This is helpful to get a random data from the database collection;
+
+		* RAND() ( MYSQL ) : 
+
+			* SELECT colunm_name FROM table_name ORDER BY RAND() LIMIT 1;
+
+	* AS statement : 
+
+		* Which is helpful to set a temporary name for an colunm;
+
+		* it makes an easy presentation of query results;
+
+		* it set a temp colunm name without changing the original names;
+
+		* SELECT colunm_name AS alias_name FROM table_name;
+			ex : SELECT date_of_join AS date, e_id AS employee_id ,name FROM demo_table;
+
+	* IN statement  : 
+
+		* this is helpful to avoid using multiple OR conditions
+
+		* it is used in all the CRUD operations
+
+		* SELECT colunm_name FROM table_name
+			ex : SELECT * FROM students WHERE student_name IN ( 'name1', 'name2' , 'name3' );
+			ex : SELECT * FROM students WHERE student_name NOT IN ( 'name1', 'name2' , 'name3' );
+
+	* SELECT with MULTIPLE colunm : 
+
+		* Using the JOIN queries to SELECT data form the multiple table
+
+		* syntax : 
+
+			SELECT colunm_names FROM INNER JOIN tale_to_join ON condition ORDER BY DESC;
+
+
+		Customer1 table
+
+		Cus_id	Name1
+		1		Jack
+		2		Jill
+
+		Customer2 table
+
+		Cus_id	Name2
+		1		Sandy
+		2		Venus
+		
+		Product table
+
+		P_id	c_id	P_name
+		1		1		Laptop
+		2		2		Phone
+		3		P1		Pen
+		4		P2		Notebook
+
+		* SELECT product.p_id, product.c_id, c1.name,c2.name
+		  FROM products AS product
+		  LEFT JOIN customer1 AS c1
+		  ON product.c_id = c1.Cus_id
+		  LEFT JOIN customer2 AS c2
+		  ON product.c_id = c2.Cus.id;
+		  ORDER BY product.p_id;
+		  ( This Query JOIN's thw three table )
+
+	* BETWEEN : 
+
+		* it will selects the value b/w to range
+
+		* SELECT table_name FROM table_name WHERE colunm_name BETWEEN range1 AND range2;
+			ex : SELECT * FROM demo_table WHERE customer_id BETWEEN 10 And 100 ORDER BY DESC;
+
+	* AVG : 
+
+		* returns the average of the given numaric colunm 
+
+		* SELECT AVG( colunm_name ) FROM table_name;
+			ex : SELECT AVG( 'marks' ) FROM demo_table;
+
+	* SUM : 
+
+		* returns the total value of the given numaric colunm 
+
+		* SELECT SUM( colunm_name ) FROM table_name;
+			ex : SELECT SUM( 'marks' ) FROM demo_table;
+
+	* SELECT BY DATE : 
+
+		* it is helpful to get a data by date fillter ;
+
+		* SELECT colunm_name FROM table_name WHERE date_colunm_name condtion;
+			ex : SELECT * FROM demo_table WHRER date >= '2013-12-01';
+
+		* use the range :
+			ex : SELECT * FROM table_name WHERE date < '2012-12-31' AND date > '2013-12-31';
+			( retunns rows after 2012 anf before 2013 )
+
+			ex : SELECT * FROM table_name WHERE data BETWEEN '2012-02-13' AND '2013-02-13';
+
+			ex: SELECT* FROM table_name WHERE cast(datediff (day, 0, yourdate) as datetime) = '2012-12-12'
+
+			ex : SELECT department, SUM (sales) AS "Total Sales"  
+				 FROM order_details  
+				 GROUP BY department;  
+			
+			Let us take a table named order_details
+
+			ID	DEPARTMENT	DATE		DAILY SALES
+			1	Mechanical	2012-08-13	360
+			2	Electrical	2012-08-13	100
+			2	Electrical	2012-08-14	110
+			3	Electronics	2012-08-13	150
+			3	Electronics	2012-08-14	170
+			
+			After using the SQL GROUP BY statement with SUM, you will find the following result.
+
+			DEPARTMENT	SUM(DAILY SALES)
+			Mechanical	360
+			Electrical	210
+			electronics	320

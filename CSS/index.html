@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+	<meta charset="utf-8">
+	<meta name="author" content="Sasidharan">
+	<meta name="description" content="Css Reference and cheat sheet">
+	<meta name="viewport" content="width = device - width initial-scale=1">
+	<title>CSS REFERENCES AND CHEATSHEET</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+	<header>
+		<h1>CSS Refernces.</h1>
+	</header>
+	<main>
+		<section>
+			<h2 class="headings">What is CSS?</h2>
+			<ul>
+				<li>CSS( Cascading Style Sheet ) is the code that styles the web components</li>
+				<li>CSS this is not a prgramming language</li>
+				<li>And it is not a markup language too</li>
+				<li>It is a style sheet language</li>
+			</ul>
+		</section>
+		<section>
+			<h2 class="headings">Anatomy of CSS</h2>
+			<pre>
+	( selector )
+	\
+	p {
+		"color" : "Red";
+		<----->   <--->
+		property  value
+
+		<-Declaration->
+	}
+			</pre>
+			<ul>
+				<li>The Entire structure is called as RULESET</li>
+			</ul>
+			<dl>
+				<dt>Selector</dt>
+				<dd>This is the HTML element name at the start of the ruleset. It defines the element(s) to be styled (in this example, &lt;P&gt; elements). To style a different element, change the selector.</dd>
+
+				<dt>Declaration</dt>
+				<dd>This is a single rule like color: red;. It specifies which of the element's properties you want to style.</dd>
+
+				<dt>Properties</dt>
+				<dd>These are ways in which you can style an HTML element. (In this example, color is a property of the &lt;P&gt; elements.) In CSS, you choose which properties you want to affect in the rule.</dd>
+
+				<dt>Property value</dt>
+				<dd>To the right of the property—after the colon—there is the property value. This chooses one out of many possible appearances for a given property. (For example, there are many color values in addition to red.)</dd>
+			</dl>
+			<h3>Important parts of the syntax</h3>
+			<ul>
+				<li>Apart from the selector, each ruleset must be wrapped in curly braces. ({})</li>
+				<li>Within each declaration, you must use a colon (:) to separate the property from its value or values.</li>
+				<li>Within each ruleset, you must use a semicolon (;) to separate each declaration from the next one.</li>
+				<li>To modify multiple property values in one ruleset, write them separated by semicolons.</li>
+			</ul>
+		</section>
+
+		<!-- Selector types -->
+		<p name="para">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+		tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+		quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+		consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+		cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+		proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+		<p name="address">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+		tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+		quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+		consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+		cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+		proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+		<p name="pincode">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+		tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+		quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+		consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+		cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+		proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+	</main>
+</body>
+</html>

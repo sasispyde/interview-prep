@@ -1,0 +1,16 @@
+img {
+  	max-width: 100%;
+  	display: block;
+}
+
+p {
+	color: tomato;
+}
+
+a{
+	text-decoration: none;
+}
+
+.emphasisHighlight {
+	color: black;
+}

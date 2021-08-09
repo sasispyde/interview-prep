@@ -1,0 +1,146 @@
+HYPERLINKS :
+	
+	* Hyper links this is basically used for making our document to link with other documents;
+
+	* this is like making conneting the html page based on the user choice(Make link for different pages)
+
+	* the Hyperlinks can URL url can anything like HTML page, textfile, images, and more;
+
+ANOTOMY OF A LINK : 
+	
+	* If we need to make an HYPERLINK we have make an the text into <a></a>
+
+	* it takes three parts
+
+	* like
+
+		* (O) 		-> Means Optional
+
+		* HREF 		-> Link to anathor page, images and more;
+
+		* TITLE(O) 	-> This is helpful when we hover the link it tells the info about the Link
+
+		* TERGET(O) -> It refers the where we going to show the images or page like newtab, same page like that;
+
+USING THE LINKS :
+	
+	* if we need to create the new link to a web page already exists(use the link);
+
+	* if we create link the Local directory in same folder use the file name ("contact.html");
+
+	* for nested folder use the ("../contact.html"); ('/contact/contact.html'); and more;
+
+	* we can use the ../../../complex/path/to/my/file.html; for multiple instances;
+
+DOCUMENT FRAGMENT :
+	
+	* it is possible to make a link using the part of the HTML page;
+
+	* rather then top of the document;
+
+	* Using the ID attribute to link the document;
+		<h2 id = "First_id">Heading Level 2</h2>
+
+	* then use # symbol at the end of the URL after that specify the ID;
+		<p>Testing the Fragment<a href="exercise.html#Nestedlist" title="nested list" target="_self">Nested List Example</a></p>
+	
+	* and if we need the Document fragment reference on is own to link the part of an same document
+		<p>Testing the Fragment<a href="#Nestedlist" title="nested list" target="_self">Nested List Example</a></p>
+
+	* for example refer the hyperLink.html;
+
+ABSOLUTE AND RELATIVE URL :
+	
+	ABSOLUTE :	
+
+		* Points to a location that is defined by its absolute locaion on the web;
+
+		* Includes Protocol and the Domain name;
+
+		* For example :
+
+			* if we heve an new file in the project that sits inside the root directory;
+
+			* so the URL like this 
+
+				* https://www.ex.com/project/index.html
+
+				* https://www.ex.com/project
+
+				* https://www.ex.com
+
+			* The absolute always points to the same location no matter where it is used;
+
+	RELATIVE :
+
+		* A relative URL will point to different places depending on the actual location of the file you refer from
+
+	* This is the only different Between ABSOLUTE and the RELATIVE;
+
+LINKIND NON HTML CONTENTS :
+	
+	* If we the non html content it have some alternative problems like the popup and flashplayer;
+
+	* If we have an Low Banwidth connection the link starts multiple megabytes to start;
+
+	* If you haven't got the Flash player installed, click a link and then suddenly get taken to a page that requires Flash.
+
+	* 	<p><a href="http://www.example.com/large-report.pdf">
+	  	Download the sales report (PDF, 10MB)
+		</a></p>
+
+	*	<p><a href="http://www.example.com/video-stream/" target="_blank">
+		  Watch the video (stream opens in separate tab, HD quality)
+		</a></p>
+
+	*	<p><a href="http://www.example.com/car-game">
+		  Play the car game (requires Flash)
+		</a></p>
+
+	* By using the DOWNLOAD ATTRIBLUTE rather then opening the file in BROWSER;
+
+	* you can use the download attribute to provide a default save filename. 
+
+	* Here's an example with a download link to the latest Windows version of Firefox:
+
+	* example :
+		
+		* <a href="https://download.mozilla.org/?product=firefox-latest-ssl&os=win64&lang=en-US"
+		   	download="firefox-latest-64bit-installer.exe">
+		  	Download Latest Firefox for Windows (64-bit) (English, US)
+		  </a>
+
+HYPER LINKS BEST PRACTICES :
+	
+	* Search engines use link text to index target files, so it is a good idea to include keywords in your link text to effectively describe what is being linked to
+
+	* Don't repeat the URL as part of the link text — URLs look ugly, and sound even uglier when a screen reader reads them out letter by letter.
+
+	* Keep your link label as short as possible — long links especially annoy screen reader users, who have to hear the whole thing read out.
+
+	* use relative path;
+
+Email Links :
+	
+	* it is possible to create links or that button that clicked rather then linking to a resources or page
+
+	* By using the mailto: URL scheme to achive this;
+
+	* iIn fact, the email address is even optional. If you leave it out (that is, your href is simply "mailto:"), a new outgoing email window will be opened by the user's mail client that has no destination address specified yet. This is often useful as "Share" links that users can click to send an email to an address of their choosing.
+
+	* In addition to the email address, you can provide other information. In fact, any standard mail header fields can be added to the mailto URL you provide. The most commonly used of these are "subject", "cc", and "body" (which is not a true header field, but allows you to specify a short content message for the new email). Each field and its value is specified as a query term.
+
+	* by achiuve this use the get request string to use above features like cc, bcc and more;
+
+	* <a href="mailto:nowhere@mozilla.org?cc=name2@rapidtables.com&bcc=name3@rapidtables.com&subjec		t=The%20subject%20of%20the%20email&body=The%20body%20of%20the%20email">
+  		Send mail with cc, bcc, subject and body
+	  </a>
+
+	* Each Field must be URL encoded 
+
+	* Here are a few other sample mailto URLs:
+		mailto:
+		mailto:nowhere@mozilla.org
+		mailto:nowhere@mozilla.org,nobody@mozilla.org
+		mailto:nowhere@mozilla.org?cc=nobody@mozilla.org
+		mailto:nowhere@mozilla.org?cc=nobody@mozilla.org&subject=This%20is%20the%20subject

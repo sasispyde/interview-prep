@@ -1,0 +1,148 @@
+DATABASE Queries : 
+
+	* Create a database :
+		
+		* CREATE DATABASE database_name; ( Name should be unique );
+			ex : CREATE DATABASE demo_database;
+	
+	* Delete a database :
+
+		* DROP DATABASE database_name; ( deletes all the tables and views );
+			ex : DROP DATABASE demo_database;
+
+	* Remane the database : 
+
+		* RENAME DATABASE old_database_name TO new_data_base_name; ( MYSQL )
+			ex : RENAME DATABASE demo_database TO name_changed_database;
+		
+		* ALTER DATABASE old_name MODIFY NAME = new_name;
+			ex : ALTER DATABASE name_changed_database MODIFY NAME = demo_database;
+
+	* Select the database
+		
+		* Before executing the SQL queries you need to select the database
+		
+		* USE DATABASE database_name;
+			ex : USE DATABASE demo_database;
+
+TABLE Queries : 
+
+	What is table : 
+
+		* Table is a colection of data stired in the format of rows and column
+
+		* And its is also known as relation of rows and tuples
+		
+	* Create an Table : 
+
+			* CREATE TABLE table_name ( 'colunm1' 'data_type', 'colunm2' 'data_type', ...);
+				ex : CREATE TABLE my_first_table ( 'name' 'VARCHAR(20)' , 'age' 'INT(3)');
+
+			* DESC table_name to see the table structure
+
+		* Create a Table by using anathor table :
+
+			* CREATE TABLE table_name AS SELECT ( colunm1, colunm2,...) FROM old_table_name;
+				ex : CREATE TABLE demo_table2 AS SELECT ( id ) FROM demo_table;
+
+			* it create the same column name with corressponding values and we can what are the column wants to add.
+
+		* Create a primary key in create table statement
+		
+			* CREATE TABLE demo ( 'id' 'INT(3)', 'name' 'VARCHAR(50)', PRIMARY KEY(id) ) (Single key)	
+
+			* CREATE TABLE demo ( 'id' 'INT(3)', 'e_id' 'INT(10)' , 'name' : 'VARCHAR(50)' CONSTRAINT p_id PRIMARY KEY ( id, e_id ) );
+
+	* Drop Table
+
+		* Drop table it is used to delete the table schema and data.
+
+		* DROP TABLE table_name;
+			ex : DROP TABLE demo_table;
+
+		* To check this use "DESC table_name";
+
+	* Delete Table
+
+		* Delete Statemant is used to delete the rows of the table 
+
+		* By using the WHERE condition to remove a particuler row
+
+		* Without WHERE it removes all rows from the table
+
+		* Schema not to be deleted
+
+		* DELETE TABLE table_name ( Deletes all rows )
+			ex : DELETE TABLE demo_table;
+
+		* DELETE TABLE table_name WHERE[condtions] ( for single or multiple row );
+			ex : DELETE TABLE demo_table WHERE id = '01';
+
+		* Difference b/w TRUNCATE and DELETE is DELETE uses the WHERE to make a conditional remove but TRUNCATE not allow that.
+
+		* Difference b/w TRUNCATE and DROP is DROP is deletes all whole table like schema, constraints, and relatioships and more but TRUNCATE deletes rows only so we dont lose any of these data from the table
+
+	* Rename the Table : 
+
+		* it is used to rename the table
+
+		* ALTER TABLE table_name RENAME TO new_name; ( Always use this )( this is one way of changing the name ) 
+			ex : ALTER TABLE table_name RENAME TO meaningful_name; 
+		
+		* RENAME old_name TO new_name;
+			ex : RENAME 'demo_table' TO 'meaningful_name';
+
+	* Truncate Table : 
+
+		* their is no WHERE condtion that is differnce b/w DELETE AND DROP
+
+		* TRUNCATE TABLE table_name;
+			ex : TRUNCATE TABLE demo_table
+		
+		* Roll back operation is not possible in TRUNCATE TABLE
+
+	* Copy the Table from anathor table
+
+		* SELECT * INTO table_to_store_data FROM table_to_select_the_table;
+			ex: SELECT * INTO employees FROM hr_employees
+
+	* Temporary table : 
+
+		* Temporary tables are used to perform all kinf of operation and it will be created at the of execution like ( Run time );
+
+		* it have two types : 
+
+			* local temp table
+			* globla temp table
+
+				* Local Temp Table :
+
+					* CREATE TABLE # Local Temp Table( user id int, username varchar(10), user address varchar(150) )
+
+				* Global Temp table 
+
+					* CREATE TABLE ##Global Temp Table( user id int, user name varchar(20) );
+
+	* Alter table :
+
+		* This is helpful to add and modify the columns in the table and it will also used in table rename 
+
+		* And it is also helpful to add and remove the constraints in the existing table
+
+		* Add a new colunm in the exising table :
+
+			* ALTER TABLE table_name ADD colunm_name colunm definition; ( for MYSQL ) 
+				ex : ALTER TABLE demo_table ADD (eid int(2), emp_name varchar(20) CONSTRAINTS PRIMARY KEY(eid)); ( multiple colunm suports in ORACLE only )
+
+		* Modify the existing colunm
+
+			* ALTER TABLE table_name MODIFY colunm_name colunm_definition;
+				ex : ALTER TABLE demo_table MODIFY name char(20);
+
+		* Delete an exixting colunm :
+
+			* ALTER TABLE table_name DROP COLUNM colunm_name;
+
+		* Rename a colunm name :
+
+			* ALTER TABLE table_name RENAME COLUNM old_name TO new_name;

@@ -1,0 +1,94 @@
+HEAD :
+	
+	* it is an Document that is not displayed in the user screen;
+
+	* this is basically adds some details about the page;
+
+	* also helps to include external files like css and javascript and nore;
+
+	* like ICONS and Data about the HTML like author name and more;
+
+	* and add some meta data about the page
+
+	* the main Job for the HEAD is storing the METADATA about the page;
+
+ADDING THE TITLE :
+	
+	* The <title> element is used to specfiy the overall title for the Document not for Document content;
+
+	* the <h1> element is helpful to add title to the document content like stort title and NEWS heading and morel;
+
+	* This will helpful at the time of adding the bookmark;
+
+META DATA :
+	
+	* Metadata is a data that describes the data;
+
+	* The official way to add the mata data is using the <meta>;
+
+	* <meta charset="utf-8"> -> utf-8 this is basically a universal charset that represent all the char from the human laguages always use this out;
+
+	* ISO-8859-1 -> this is also a charset;
+
+ADDING THE AUTHOR AND DESCRIPTION :
+	
+	* meta elements are basically includes the "NAME" and the "CONTENT" attributes;
+
+	* Name -> it specifies the type of meta element, what type of information it contains;
+
+	* content -> specifies the actual meta content;
+
+	* example :
+
+		<meta name="author" content="Sasidharan">
+
+		<meta name="description" content="page description">
+
+	* adding the description meta tag it will helps to appear your page in higher order;
+
+	* also helpful in SEO(Search Engine Optimization);
+
+	* The TITLE And the META description will be shown in the search engine results;
+
+OTHER MATATAGS : 
+	
+	* Refer the open graph data for more information;
+
+ADDING THE CSS AND JAVASCRIPT :
+	
+	* Adding css file -> this will helps to make our websites looks nicer;
+
+		* Using the LINK tag to add the CSS file into HTML file;
+
+		* always use the LINK tag in HEAD section 
+
+		* it takes Two attributes like "rel" and the "href";
+
+		* <link rel="text/stylesheet" href = "file destination" />
+
+	* Adding the JAVASCRIPT file : 
+
+		* it uses the "script" element to add the javascript file into the HTML;
+
+		* it will helps to add some functionality to the websites like video player, Maps and more;
+
+		* it takes the "src" as a attribute and defer;
+
+		* src -> it takes file path to include;
+
+		* defer -> it will helps the load js at the time of html page load;
+
+		* async -> this is same as defer but it will executes the code at time load completion;
+
+		* <script src="file destination" />
+
+
+SETTING UP THE LANGUAGE :
+	
+	* it is worth to mantioning the language of an content;
+
+	* by adding the lang attribute to define an language;
+
+	* example :
+
+		* lang="en-US";

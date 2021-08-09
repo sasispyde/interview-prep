@@ -1,0 +1,208 @@
+HTML -> HYPEER TEXT MARKUP LANGUAGE;
+
+it is not a programming language;
+
+it is an markup language that tells the browser to how to structure the content(web page);
+
+it is consistes of ELEMENTS;
+
+ELEMENT : 
+	
+	* element is a combination of opening tag and closing tag and the content;
+
+	* example : 
+		
+			 ----Contant----
+		* <p> This is a cat </p> 
+		  -------Element--------
+
+		* <p> 	-> Opening Tag;
+		* </p> 	-> Closing Tag;
+
+NESTED ELEMETNS : 
+	
+	* Putting the Element inside an element is called Nesting Element;
+
+	* The first opening Tag should be closed very last;
+
+BLOCK VS INLINE ELEMENTS :
+	
+	BLOCK LEVEL : 
+		
+		* this is basically shows the content in new line;
+
+		* it is basically a structural Element;
+
+		* example list, navigation menu, or footer, 
+
+		* we cannot nest the block level elements inside the inline elements;
+
+	INLINE :
+
+		* This are contained inside the block level elements;
+
+		* It used in small part of the content;
+
+		* It is not cause the new line;
+
+		* it is mainly used in "Text formatting" and "Text Elements";
+
+Empty Elements : 
+
+	* Sometimes some TAGS are not have closing tag this kind of elements are called EMPTY ELEMENTS;
+
+	* Mainly these are used to insert/embed something inside the content;
+
+	* it is also called as "VOID Elements"
+
+	* Example : img,embed, and Etc....
+
+ATTRIBUTES :
+	
+	* Elements also have some attributes also;
+
+	* it contains the extra info about the element but it is not visible in the content;
+
+	* example :
+
+		* <p class="paragraph">Element with attribute</p>
+
+	* Each attribute should have between them;
+
+	* Attribute name followed by equal sign;
+
+	* Attribute value should be wrapped with opening and closing tags;
+
+	* Attribute without value is acceptable;
+
+	* using multiple attributes for anchor tag : 
+
+		* <a>-> opening tag
+
+		* href -> attribute 1
+
+		* title -> attribute 2
+
+		* target -> attribute 3
+
+		* content -> content
+
+		* </a> -> closing tag
+
+BOOLEAN ATTRIBUTES :
+	
+	* Attribute without value is called Boolean Attributes;
+
+	* it have only one value;
+
+	* it is generally same as attribute name;
+
+	* Example : disabled property -> it disables the form input fileds;
+
+	* Example :
+
+		* <input disabled="disabled" />
+
+OMITTING THE QUATES :
+
+	* <a href=https://www.mozilla.org/>favorite website</a>
+
+	* Example : The Element HREF is not using the Quates to Wrap the elemwnt;
+
+	* but some attribute should have quate to wrap the value;
+
+	* it is nessessery;
+
+	* Example : title = "Title of the page"; (Correct Way) takes the entire string to display;
+
+				title = Title of the page;(In correct way) it takes the "Title" to display;
+
+SINGLE vs DOUBLE QUATES:
+	
+	* we can use the single and double quate to wrap the element;
+
+	* but it have some limitations;
+
+		* <p class="paragraph'></p> -> "INVALID";
+
+		* <p class='paragraph"></p> -> "INVALID";
+
+		* <p class='paragraph's'></p> -> "INVALID";
+
+		* same for Double Quates;
+
+ANATOMY of an HTML Element:
+
+	* induvidual HTML Element are not useful for Develop web page;
+
+	* 	<!DOCTYPE html>
+		<html>
+		  	<head>
+		    	<meta charset="utf-8">
+		    	<title>My test page</title>
+		  	</head>
+		  	<body>
+		    	<p>This is my page</p>
+		  	</body>
+		</html>
+
+	* <!DOCTYPE html> -> Doctype is an historical artifact that needs to be included for everything this is an shortest string that count as a valid doctype ;
+
+	* <html></html> -> it is the root element that wraps the whole content of the page;
+
+	* <head></head> -> this is an comtainer element; it is helpful to include anything to our html douument. it is not shown as a content. some example like CSS JAVASCRIPT Files, Keywords;
+
+	* <meta charset="utf=8"> -> this will helps us to add charecter set of an HTML document;
+
+	* <title></title> -> which will helps to set a title of an page; which is an title apperars in the browser tab; itis helpful at the time of adding the bookmark;
+
+	* <body></body> -> this element will contains all the content to show to the user; like images, text, videos and games and more;
+
+WHITE SPACES IN HTML :
+	
+	* if we use the multiple white spaces for the beautiful alignment;
+
+	* HTML won't care about that spaces, The HTML parser will reduce the each lonf spaces into the single;
+
+	* For example :
+
+		* <p>Dogs are silly.</p>
+
+		* <p>Dogs        are
+         			silly.</p>
+    * in this example the both the element will be prints the same content with same spaces
+
+SOME USEFUL CHAR REFERENCES :
+	
+	* 	<	&lt;
+	*	>	&gt;
+	*	"	&quot;
+	*	'	&apos;
+	*	&	&amp;
+
+For ADDING the Comments : 
+		
+	* i will helpful to add notes and logic about the page;
+
+	* syntax = <!--  Notes  -->
+
+	* Example = <!-- for addind comments -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

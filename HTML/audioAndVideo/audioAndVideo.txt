@@ -1,0 +1,101 @@
+	* Web developers have wanted to use video and audio on the Web for a long time, ever since the 	early 2000s when we started to have bandwidth fast enough to support any kind of video (video files are much larger than text or even images.) In the early days, native web technologies such as HTML didn't have the ability to embed video and audio on the Web, so proprietary (or plugin-based) technologies like Flash (and later, Silverlight) became popular for handling such content. This kind of technology worked ok, but it had a number of problems, including not working well with HTML/CSS features, security issues, and accessibility issues.
+
+	* A native solution would solve much of this if implemented correctly. Fortunately, a few years later the HTML5 specification had such features added, with the <video> and <audio> elements, and some shiny new JavaScript APIs for controlling them. We'll not be looking at JavaScript here — just the basic foundations that can be achieved with HTML.
+
+	* We won't be teaching you how to produce audio and video files — that requires a completely different skillset. We have provided you with sample audio and video files and example code for your own experimentation, in case you are unable to get hold of your own.
+
+VIDEO ELEMENT :
+	
+	* By using the video element to achive this 
+
+	* it takes two argument like image src and controls;
+
+	* src -> it specifies the where the video is located;
+
+	* controls -> it is an boolean to whick make the add the control and remove the controls;
+
+	* and inside the video element i uses the p element;
+
+	* it is an fallback element this is only showed when the browser does not support the video element;
+
+USING THE MULTIPLE SOURCE FORMAT TO IMPROVE THE COMPACTABILITY :
+	
+	* Different browser support different format of video's;
+
+	* like old IE browser and SAFARI browsers does not new video formats so that was an issue in all the browsers;
+
+	CONTENTS OF MEDIA FILES :
+
+		* Formats like MP3, MP4 and WebM are called container formats.
+
+		* They define a structure in which the audio and/or video tracks that make up the media are stored, along with metadata describing the media, what codecs are used to encode its channels, and so forth.
+
+		* For adding mutilple video format use the <source> instead of sec attribute;
+
+		* <source> -> It takes two attributes like "src" and "type"
+
+		* src -> location(File path) of the video;
+
+		* type -> type of the video format; like video/mp4;
+
+OTHER VIDEO FEATURES :
+	
+	* Their are lot of new features in VIDEO;
+
+	* by using the WIDTH and HEIGHT attribute set the width and height of an video frame;
+
+	* Autoplay :
+
+		* Makes the audio or video start playing right away, while the rest of the page is loading. You are advised not to use autoplaying video (or audio) on your sites, because users can find it really annoying.
+
+	* Loop :
+
+		* Makes the video (or audio) start playing again whenever it finishes. This can also be annoying, so only use if really necessary.
+
+	* Muted :
+
+		* Causes the media to play with the sound turned off by default.
+
+	* Poster :
+
+		* The URL of an image which will be displayed before the video is played. It is intended to be used for a splash screen or advertising screen.
+
+	* Preload :
+
+		* Used for buffering large files; it can take one of three values:
+
+			* "none" does not buffer the file
+			* "auto" buffers the media file
+			* "metadata" buffers only the metadata for the file
+		
+		* You can find the above example available to play live on Github (also see the source code.) Note that we haven't included the autoplay attribute in the live version — if the video starts to play as soon as the page loads, you don't get to see the poster!
+
+The AUDIO Element :
+	
+	* The <audio> element works just like the <video> element, with a few small differences as outlined below. A typical example might look like so:
+
+	* This is same as the VIDEO element but the only different is the AUDIO element does not support the WIDTH and HEIGHT attributes;
+
+	* It also doesn't support the poster attribute — again, no visual component.
+
+	* other then that AUDIO Element supports all the features of VIDEO Element;
+
+	RESTARTING THE MEDIA PLAYBACK :
+
+		* const mediaElem = document.getElementById("my-media-element");
+		  mediaElem.load();
+
+VIDEO TEXT TRACKS :
+	
+	* subtitles
+		
+		* Translations of foreign material, for people who don't understand the words spoken in the audio
+
+	* captions
+			
+		* Synchronized transcriptions of dialog or descriptions of significant sounds, to let people who can't hear the audio understand what is going on.
+	
+	* timed descriptions
+		
+		* Text which should be spoken by the media player in order to describe important visuals to blind or otherwise visually impaired users.
+

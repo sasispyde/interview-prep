@@ -1,0 +1,74 @@
+it is a programing language;
+it is paltform indepamndent;
+it is object oriented programming language;
+
+it is mainly used for making the web page interactive;
+like animations popup and clickable buttons;
+
+And moreover javascript also have some advanced concepts like node js and More;
+
+it contains the standard library objets such as array,set,math and all;
+
+it is used both the area of the web developments like :
+	
+	* cilent side(Front end);
+	* server side(Backend);
+
+* client side : 
+	it used the DOCUMENT OBJECT MODEL(DOM) 
+
+* server side :
+	it is mainly used to interact with the databases;
+
+JAVA vs JAVASCRIPT : 
+	
+	JAVASCRIPT : 
+		* it is object oriented
+		* inheritence is made by throught the object prototype mechamism
+		* no need to declare the data type of the variable;
+		* it is cannot automatically write data in hard disk;
+	JAVA : 
+		* it is class based, and objects are divided into two parts;
+		* data type is primary at the time of declaration;
+		* can automatically write into the disk;
+
+
+JAVASCRIPT GRAMMERS and TYPES : 
+
+	* most of the statements are borrowed from JAVA, C++, C,
+	
+	* and influenced by PERL, PYTHON, AWK
+	
+	* javascript is a case sensitive and it used the unicode charecters set;
+		* ex : 
+			* var Data = 10;
+			* var data = 10;
+			* both are different variables;
+
+	* STATEMENTS :
+
+		* the instuctions are called as statements and they are seperated by semicolon "( ; )";
+		
+		* by making the new line also considered as new statement so their is no need to use the semicolons at the end of the instructions;
+	
+	* ADDING COMMENTS : 
+
+		* "//" for single line comments
+		* "/* content  */" for multi line comments;
+
+	* DECLARITION :
+
+		* Their are three types of variable in javascript
+			* const;
+			* let;
+			* var;
+
+		* var -> it declarea the variable, optional to initialize the value by default it holds the undefinded as a value;
+
+		* let -> it helps to make block level variables, local variables, optional to initialize the values;
+
+		* const -> it is read only valriable, and block scoped;
+		
+ 
+
+

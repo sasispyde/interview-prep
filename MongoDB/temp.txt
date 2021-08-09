@@ -1,0 +1,50 @@
+db.passengers_log.aggregate([
+  {
+     "$match":{
+        'passengers_id':237,
+        travel_status:1
+     }
+  },
+  {
+       $group : {
+           _id : "$current_location",
+           'passengers_id' : { "$first" : "$passengers_id" },
+           'current_location' : { "$first" : "$current_location" },
+           'pickup_latitude' : { "$first" : "$pickup_latitude" },
+           'pickup_longitude' : { "$first" : "$pickup_longitude" }
+      }
+  },
+  {
+     $lookup:{
+        from:"passengers_favourites",
+        localField:"passengers_id",
+        foreignField:"passenger_id",
+        as:"result"
+     }
+  },
+  {
+     $project:{
+        "current_location":"$current_location",
+        "pickup_latitude":"$pickup_latitude",
+        "pickup_longitude":"$pickup_longitude",
+        "p_favourite_place":"$result.p_favourite_place",
+        "p_fav_latitude":"$result.p_fav_latitude",
+        "p_fav_longtitute":"$result.p_fav_longtitute",
+        "fav":{
+           "$filter":{
+              'input':"$result.p_favourite_place",
+              'as':'place',
+              'cond':{
+                 "$eq":[
+                    "$current_location",
+                    "$$place"
+                 ]
+              }
+           }
+        }
+     }
+  },
+  {
+    $match : { "fav" : { '$size':0} }  
+  }
+])

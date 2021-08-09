@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="US-en">
+<head>
+	<!-- meta data about the page -->
+	<meta charset="utf-8">
+	<meta name="author" name="Sasidharan S">
+	<meta name="description" name="CSS Cheet sheet">
+
+	<!-- Title of the page -->
+	<title>CSS Cheet sheet</title>
+
+	<!-- Link the external style sheet -->
+	<link rel="stylesheet" type="text/css" href="cheat_style.css">
+
+	<!-- Link google fonts -->
+	<link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@500&display=swap" rel="stylesheet">
+
+</head>
+<body>
+	<h1 class="heading">CSS Cheet Sheet</h1>
+	<table>
+		<caption>CSS Selector</caption>
+		<thead>
+			<tr>
+				<th>S.No</th>
+				<th>Selector</th>
+				<th>Description</th>
+				<th>Example</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<td>1</td>
+				<td><span>ID</span></td>
+				<td>The element on the page with the specified ID. On a given HTML page, each id value should be unique.( use # )</td>
+				<td>#demo ( &lt;p id="demo" &gt; &lt;/p&gt; )</td>
+			</tr>
+			<tr>
+				<td>2</td>
+				<td><span>CLASS</span></td>
+				<td>The element(s) on the page with the specified class. Multiple instances of the same class can appear on a page.(use .)</td>
+				<td>.demo ( &lt;p class="demo" &gt; &lt;/p&gt; )</td>
+			</tr>
+			<tr>
+				<td>3</td>
+				<td><span>ELEMENT</span></td>
+				<td>All HTML elements of the specified type.( use tag name )</td>
+				<td>p ( &lt;p class="demo" &gt; &lt;/p&gt; )</td>
+			</tr>
+			<tr>
+				<td>4</td>
+				<td><span>ATTRIBUTE</span></td>
+				<td>Selects the element with the specified attribute</td>
+				<td>p[name="demo"] ( &lt;p name="demo" &gt; &lt;/p&gt; )</td>
+			</tr>
+			<tr>
+				<td>5</td>
+				<td><span>PSEUDO</span></td>
+				<td>The specified element(s), but only when in the specified state. (For example, when a cursor hovers over a link.)</td>
+				<td>p:hover ( &lt;p name="demo" &gt; &lt;/p&gt; )</td>
+			</tr>
+			<tr>
+				<td>6</td>
+				<td><span>UNIVERSAL</span></td>
+				<td>It selects everything in the document (or inside the parent element if it is being chained together with another element and a descendant combinator).</td>
+				<td>*</td>
+			</tr>
+		</tbody>
+	</table>
+	<div class="img_container">
+		<img src="https://images.unsplash.com/photo-1600226281056-6a85c8e8e212?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1489&q=80" alt="elephant">
+	</div>
+</body>
+</html>

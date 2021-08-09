@@ -1,0 +1,91 @@
+Basic definition of an SQL Database
+
+	* SQL -> Means ( Structured Query Language );
+
+	* it is a query language to access and modify the database ( records are stores here );
+
+	* it is an query language not an database;
+
+	* it is designed for maintaining the relational database management system
+
+	* it is based on relational algebra and tuple relational calculus
+
+SQl Syntax :
+
+	* SQl is not an case sensitive ( KEYWORDS are written in Uppercase )
+
+	* End With Semi colon ( ; ) it is mainky used for seperate the SQL Statements
+
+SQl Keywords :
+	
+	* SELECT - it extract the data from the database;
+	* UPDATE - it update the existind data;
+	* DELETE - it will delete the existiog record;
+	* CREATE TABLE - creates the table;
+	* AlTER TABLE - alter ther table;
+	* DROP TABLE - deletes the whole table;
+	* CREATE DATABASE - create the new database;
+	* ALTER DATABASE - modify the database;
+	* INSERT INTO - insert new data into database;
+	* CREATE INDEX - it creates an index like search keys;
+	* DROP INDEX - it deletes an index;
+
+SQL Date Types : 
+
+	SQl String Data types : 
+
+		* CHAR - its size can be 0 to 255
+		* VARCHAR - the size can be from 0 to 65535
+		* BINARY - it stores the binary byte string like CHAR
+		* VARBINARY - it stores the binary byte string like VARCHAR
+		* TEXT - it contains the maxlength of 255 charecters
+		* TINYTEXT, MEDIUMTEXT, LONGTEXT - this is same as TEXT but storage capacity will be differ
+		* ENUM -
+		* SET - it is used to specify the string that have 0 or more values
+		* BLOB - it stores large amount of data ( upto 64MB )
+
+	SQL Int Data types :
+
+		* BIT - it is used for bit valiue types;
+		* INT - it is used to store the integer values;
+		* INTEGER - it is same as INT;
+		* FLOAT(size,d) - d -> it refers the number of decimal points;
+		* FLOAT(p) - p -> it will used to specify the weather it is a float or decimal;
+		* DOUBLE(size, d) - d - refers total number of precisioins after the decimal;
+		* DECIMAL(size,d) - length of an d is upto 30, it is a fixed point number;
+		* DEC(size,d) - it is same as decimal type;
+		* BOOL - it is used to specify the boolean type like ( TRUE, FALSE );
+
+	Sql Time stamp : 
+
+		* DATE - it is used to specify the date format YYYY-MM_DD
+		* DATETIME(FSP) - it is used to specify the date and time format YYYY-MM-DD HH:MM:SS
+		* TIMESTAMP(fsp) - it is used to specify the timestamp its value is stored in seconds 		it is format is same as the DATETIME format
+		* TIME(fsp) - it is used to specify the time format its format is hh:mm:ss
+		* YEAR - it is used to specify the four digit it allows 1901 to 2155 and 0000
+
+SQL Operators :
+	
+	* it have three types 
+		* Arithmetic
+		* Comparision
+		* Logical
+
+			* Arithmetic operators :
+				
+				* ( +, -, *, /, % ) - modulo returns reminder
+			* Comparision operators :
+				
+				* ( =, !=, >, <, >=, <=, !<, !> )
+				* < > - not equal it returns true if values are not matched
+			* Logical operators : 
+
+				* ALL - it is used to compare the all values with anathor set of values
+				* AND - it is used to check multiple conditions in the sql statements
+				* ANY - it is used to compare the value in the list according to the condtion
+				* BETWEEN - it is used to search the value between the two or more values
+				* IN - it is used to compare a value in specified list(weather present | not)
+				* NOT - not operator is always used to reverse an logical operator
+				* OR - it is used to combine multiple condtions in a sql statemets
+				* EXISTS - it is used to search a presence of row in the specied table
+				* LIKE - it is used to find the similar value using operators

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="US-en">
+	<head>
+		<!-- meta data about the page -->
+		<meta charset="utf-8">
+		<meta name="author" content="Sasidharan">
+		<meta name="description" content="It is an example HTML page for embedding documents and iframes">
+		<meta name="viewport" content="width = device-width initial-scale = 1">
+		
+		<!-- Title of the page -->
+		<title>Embed the Documents</title>
+		
+		<!-- Linking external sytle sheet -->
+		<link rel="stylesheet" type="text/css" href="style.css">
+	</head>
+	<body>
+		<div class="container">
+			<h1>I Frame and Embedding Object's</h1>
+		</div>
+		<hr/>
+		<h2>Embedding the Youtube Video</h2>
+		<div class="iframe_container">
+			<iframe width="80%" height="100%" src="https://www.youtube.com/embed/Zq2GfIuD-XE" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+		</div>
+		<h2>Embedding the External websites</h2>
+		<div class="iframe_container">
+			<iframe src="../assessment1/assessment1.html" width="100%" height="100%" frameborder="0" sandbox allowfullscreen>
+			  <p> 
+			    <a href="https://googole.co.in">
+			       Fallback link for browsers that don't support iframes
+			    </a>
+			  </p>
+			</iframe>
+		</div>
+		<h2>using Embed Element</h2>
+		<div class="iframe_container">
+			<embed src="https://images.unsplash.com/photo-1593642531955-b62e17bdaa9c?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=750&q=80" quality="medium" bgcolor="#ffffff" width="50%" height="100%" name="whoosh" align="middle" allowScriptAccess="sameDomain" allowFullScreen="false" type="image/jpeg" >
+		</div>
+		<h2>Embedding the PDF file</h2>
+		<div class="iframe_container">
+			<object data="mypdf.pdf" type="application/pdf" width="800" height="1200" typemustmatch>
+			  <p>You don't have a PDF plugin, but you can 
+			    <a href="mypdf.pdf">download the PDF file.
+			    </a>
+			  </p>
+			</object>
+		</div>
+		<h2>Example of How to use the SVG images</h2>
+		<div class="iframe_container">
+			<svg version="1.1"
+			     baseProfile="full"
+			     width="300" height="200"
+			     xmlns="http://www.w3.org/2000/svg">
+			  <circle cx="150" cy="100" r="90" fill="blue" />
+			</svg>
+		</div>
+		<h2>Embedding the SVG image using the IMG tag</h2>
+		<div class="svg_container">
+			<div class="left_side">
+				<img src="frog.svg" width="50%" height="50%" alt="frog">
+			</div>
+			<div class="rigth_side">
+				<img src="frog.svg" alt="my_svg" width="50%" height="50%" >
+			</div>
+		</div>
+		<div class="iframe_container">
+			<!-- <img width="100%" height="400px" srcset="https://images.unsplash.com/photo-1573687680341-8bd5f737ec38?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1001&q=80 480w,frog.svg 800w" sizes="(max-width: 1000px) 480px,800px", src="https://images.unsplash.com/photo-1583611191427-0c13a5a78e13?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=634&q=80" alt="Elva dressed as a fairy"
+			> -->
+			<picture>
+			  <source media="(max-width: 799px)" srcset="https://images.unsplash.com/photo-1573687680341-8bd5f737ec38?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1001&q=80">
+			  <source media="(min-width: 800px)" srcset="frog.svg">
+			  <img width="100%" height="400px" src="https://images.unsplash.com/photo-1583611191427-0c13a5a78e13?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=634&q=80" alt="Chris standing up holding his daughter Elva">
+			</picture>
+		</div>
+	</body>
+</html>

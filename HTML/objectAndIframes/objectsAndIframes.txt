@@ -1,0 +1,130 @@
+	* In web developement some times we need to show the external content that are not related to the project or content like PDF,SVG and flash;
+
+	* By achieve this we are gonne use the <embed>, <object>, <iframe>
+
+	* "iframe" this is basically used to load the external pages to the into the page like small part;
+
+	* "embed and object" this is used to embed the pdf and the svg images;
+
+	* Youtube and the Google map also allows the Embed options using ifrmes;
+
+Ifrmes in Details :
+	
+	*  <iframe> elements are designed to allow you to embed other web documents into the current document.
+
+	* There are some serious Security concerns to consider with <iframe>s, as we'll discuss below, but this doesn't mean that you shouldn't use them in your websites
+
+	* it just requires some knowledge and careful thinking. Let's explore the code in a bit more detail.
+
+	ATTRIBUTES OF AN IFRAME :
+
+		* allowfullsceen :
+
+			* If set, the <iframe> is able to be placed in fullscreen mode using the Full Screen API (somewhat beyond scope for this article.)
+
+		* frameborder :
+
+			* If set to 1, this tells the browser to draw a border between this frame and other frames, which is the default behaviour. 0 removes the border. Using this isn't really recommended any more, as the same effect can be better achieved using border: none; in your CSS.
+
+			* 0 removes the border;
+
+			* 1 adds the border(DEFAULT);
+
+		* src :
+
+			* it is an source of an file or the web address to display;
+
+		* width and height :
+
+			* set the width and the height of an iframe;
+
+		* Fallback content
+
+			* in some browsers does not support the i frames in that case we are gonna use the fallback content it is shown when browser does not support the iframes;
+
+		* sandboxs :
+
+			* only embed when it is needed;
+
+			* always use the HTTPS request like encrypted request;
+
+			* Always use the sandbox attribute
+
+EMBED and OBJECT elements :
+	
+	* The <embed> and <object> elements serve a different function to <iframe> — these elements are general purpose embedding tools for embedding multiple types of external content, which include plugin technologies like Java Applets and Flash, PDF (which can be shown in a browser with a PDF plugin), and even content like videos, SVG and images!
+
+ADDING THE VECTOR GRAPHICS TO THE WEB :
+	
+	* Vector graphics are very useful in many circumstances — they have small file sizes and are highly scalable, so they don't pixelate when zoomed in or blown up to a large size. In this article we'll show you how to include one in your webpage.
+
+	What is VECTOR graphics :
+
+		* on the web we worked on the images in two ways 
+			* Raster images -> it defines defined using a grid of pixels;
+			* Vector images -> are defined using algorithms;
+		
+		* The Raster images are pixlated wen we zoom the pages;
+		* The Vector images are not paxlated;
+
+	What is SVG :
+
+		* SVG is an XML-based language for describing vector images. It's basically markup, like HTML, except that you've got many different elements for defining the shapes you want to appear in your image, and the effects you want to apply to those shapes.
+
+		* SVG is for marking up graphics, not content. At the simplest end of the spectrum, you've got elements for creating simple shapes, like <circle> and <rect>. More advanced SVG features include <feColorMatrix> (transform colors using a transformation matrix,) <animate> (animate parts of your vector graphic,) and <mask> (apply a mask over the top of your image.)
+
+	Adding SVG to your pages :
+
+		* To embed an SVG via an <img> element, you just need to reference it in the src attribute as you'd expect. You will need a height or a width attribute (or both if your SVG has no inherent aspect ratio). If you have not already done so, please read Images in HTML.
+
+		* we can use the image element to make the svg into the web page but it have some problems so not recomended to use image element like we cannot restyle svg image;
+
+		* Some browser does not support the SVG images so use like this;
+
+		* <img src="equilateral.png" alt="triangle with equal sides" srcset="equilateral.svg">
+
+		* We can use the SVG as a CSS backgound image;
+
+RESPONSIVE IMAGES :
+	
+	* Responsive images it is an behaviour of an web to fit the images for multile screens for better readability and rich look;
+
+	* So achive this we are gonne use the "scrset" and "size" attributes in "img" element
+
+	SRCSET :
+
+		* srcset defines the set of images we will allow the browser to choose between, and what size each image is. Each set of image information is separated from the previous one by a comma. For each one, we write:
+
+			* An image filename (elva-fairy-480w.jpg)
+			
+			* A space
+			
+			* The image's intrinsic width in pixels (480w) — note that this uses the w unit, not px as you might expect. This is the image's real size, which can be found by inspecting the image file on your computer (for example, on a Mac you can select the image in Finder and press Cmd + I to bring up the info screen).
+
+	SIZE :
+
+		* sizes defines a set of media conditions (e.g. screen widths) and indicates what image size would be best to choose, when certain media conditions are true — these are the hints we talked about earlier. In this case, before each comma we write:
+
+			* A media condition ((max-width:600px)) — you'll learn more about these in the CSS topic, but for now let's just say that a media condition describes a possible state that the screen can be in. In this case, we are saying "when the viewport width is 600 pixels or less".
+			
+			* A space
+			
+			* The width of the slot the image will fill when the media condition is true (480px)
+
+
+	* It is not work properly on all the browsers
+
+
+	* Let's fix this, with <picture>! Like <video> and <audio>, the <picture> element is a wrapper containing several <source> elements that provide different sources for the browser to choose from, followed by the all-important <img> element. The code in responsive.html looks like so:
+
+	<picture>
+	  <source media="(max-width: 799px)" srcset="elva-480w-close-portrait.jpg">
+	  <source media="(min-width: 800px)" srcset="elva-800w.jpg">
+	  <img src="elva-800w.jpg" alt="Chris standing up holding his daughter Elva">
+	</picture>
+
+	* source element -> takes two attributrs like media and the srcset
+		
+		* media it is an attribute to make the breakpoint of an image;
+
+		* srcset it tells the image file path;

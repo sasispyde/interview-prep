@@ -1,0 +1,39 @@
+body {
+	margin: 0 5%;
+}
+
+h1 {
+	text-align: center;
+}
+
+.headings {
+	color: tomato;
+	text-decoration: underline;
+}
+
+ul li {
+	font-size: 17px;
+}
+
+pre {
+	font-size: 16px;
+}
+
+dl {
+	margin-left: 20px;
+}
+
+dt {
+	font-weight: bold;
+	color: rgba(0,0,0,0,6);
+	text-decoration: underline;
+}
+
+dl dt dd {
+	margin: 0 0 10px 0;
+	line-height: 18px;
+}
+
+p[name="para"] {
+	color: red;
+}

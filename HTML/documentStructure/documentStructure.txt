@@ -1,0 +1,74 @@
+The HTML always uses some kind of structure to define how the document should be shown to the user;
+
+This article looks into how to plan a basic website structure, and write the HTML to represent this structure.
+
+BASIC SECTION OF AN DOCUMENT : 
+	
+	* Header
+
+	* Navigation Bar
+
+	* Main Content
+
+	* Sidebar 
+
+	* Footer
+
+HEADER : 
+	
+	* Usually a big strip across the top with a big heading, logo, and perhaps a tagline. This usually stays the same from one webpage to another.
+
+NAVIGATION BAR : 
+	
+	* it is basically a group of navigation links(HYPER LINKS) to make chain between all the pages;
+
+	* it is basically added into the header section for nice clean view and it accepts the screen readers;
+
+MAIN CONTENT : 
+	
+	* This is the part where we are going to show the content of our document;
+
+	* Like images videos and games and more;
+
+SIDEBAR :	
+	
+	* This is bacially used to display the ads and other main page related content to like 
+	(document fragment);
+
+FOOTER : 
+	
+	* This is helpful to show the copyrigth content and other auther related content and social medis links and all;
+
+
+
+ELEMENT USED FOR HTML LAYOUTS : 
+	
+	* <main> -> is for the content unique to this page, this element is present only once in the document, and put directly inside the body;
+
+	* <article> encloses a block of related content that makes sense on its own without the rest of the page (e.g., a single blog post).
+
+	* <section> is similar to <article>, but it is more for grouping together a single part of the page that constitutes one single piece of functionality (e.g., a mini map, or a set of article headlines and summaries). It's considered best practice to begin each section with a heading; also note that you can break <article>s up into different <section>s, or <section>s up into different <article>s, depending on the context.
+
+	* <aside> contains content that is not directly related to the main content but can provide additional information indirectly related to it (glossary entries, author biography, related links, etc.).
+
+	* <header> represents a group of introductory content. If it is a child of <body> it defines the global header of a webpage, but if it's a child of an <article> or <section> it defines a specific header for that section (try not to confuse this with titles and headings).
+
+	* <nav> contains the main navigation functionality for the page. Secondary links, etc., would not go in the navigation.
+
+	* <footer> represents a group of end content for a page.
+
+NON SEMANTIC WRAPPERS :
+	
+	* Sometimes you'll come across a situation where you can't find an ideal semantic element to group some items together or wrap some content
+
+	*  HTML provides the <div> and <span> elements. You should use these preferably with a suitable class attribute, to provide some kind of label for them so they can be easily targeted.
+
+	* <span> is an inline non-semantic element, which you should only use if you can't think of a better semantic text element to wrap your content, or don't want to add any specific meaning. For example:
+
+	* <div> is a block level non-semantic element, which you should only use if you can't think of a better semantic block element to use, or don't want to add any specific meaning. For example, imagine a shopping cart widget that you could choose to pull up at any point during your time on an e-commerce site:
+
+FOR DEBUGGING :
+	
+	* use the developer tools and the https://validator.w3.org/nu/#file to validate our HTML docs;
+
+	
